@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    width: 100%;
+    
+}
+body {
+    /* background-color: black;w */
+    color: #000;
+}
+
+.birinchi {
+    width: 50%;
+}
+.ikkinchi {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.birinchi form , .ikkinchi form .box{
+    background: #eee;
+    padding: 2rem;
+    width: 70%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.birinchi form .box ,.ikkinchi form .box label {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.birinchi form .box input , button , select ,.ikkinchi form 
+ input{
+    width: 100%;
+    padding: 10px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 5px;
+    
+}
+.birinchi form .box input:focus , button , select:focus {
+    /* background-color: rgb(251, 255, 255); */
+    color: #fff;
+}
+.birinchi form .box button , .ikkinchi form button{
+    cursor: pointer;
+    background-color: blue;
+    font-size: 20px;
+    color: #fff;
+
+}
+.birinchi form  .box label {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.birinchi form .box input:focus {
+    border: none;
+    color: black;
+}
+
+/* .ikkinchi .search label #search {
+  border-radius: .5rem;
+  outline: none;
+  display: block;
+  padding: .5rem 1.8rem;
+  width: 100%;
+  margin-bottom: .5rem;
+  border: 1.5px solid rgb(216, 192, 192);
+} */
+.ikkinchi .search {
+    margin-bottom: 1rem;
+}
+
+.ikkinchi .search label  {
+    font-size: 5rem;
+    text-align: center;
+}
+.ikkinchi .search label {
+    color: red;
+}
+.ikkinchi .search label span {
+    color: springgreen;
+}
+
+.ikkinchi .search label .kok {
+    color: blue;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid black;
+    padding: 15px 15px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}

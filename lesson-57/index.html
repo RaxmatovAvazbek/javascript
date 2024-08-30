@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="form">
+        <label for="text">Firstname</label>
+        <input type="text" id="firstname">
+        <label for="password">Password</label>
+        <input type="password" id="password">
+    </form>
+     
+    <script defer src="./index.js">
+         let ism = document.querySelectorAll("input")
+        
+         ism.addEventListener("input", (e) => {
+            result.textContent = `Inputted text: ${e.data}`;
+});
+    </script>
+</body>
+</html>

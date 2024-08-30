@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./style/sytle.css")
+        link(rel="stylesheet", href="./index.html")
+        title Document
+    body 
+        include ../Compiled-HTML/Compoments/footer.pug
+        header.header
+            .header_inner.container 
+                a.logo(href="#")
+                    img(src="./images/logo (1).svg", alt="")
+                    img(src="./images/right.svg", alt="")
+                nav.nav 
+                    ol 
+                        li
+                            a(href="#") HOME
+                        li
+                            a(href="#") SERVICES
+                        li
+                            a(href="#") TECHNOLOGIES
+                        li
+                            a(href="#") CONTACT    
+                .button_list 
+                    button CONTACT US
+                    button JOIN HYDRA
+        main.main 
+            .section.container 
+                h2 
+                    span Dive 
+                    Dive Into The Depths
+                    br
+                    Of Virtual Reality
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore nisl tincidunt eget. Lectus mauris eros in vitae .
+                .button_list 
+                    button BUILD YOUR WORLD
+                    img(src="./", alt="")    

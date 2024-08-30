@@ -1,0 +1,54 @@
+:root {
+    --text-color-dark: #1c232b;
+    --body-bg: #f2eae2;
+    --text-color: #6c7289;
+    --primary: #3d8168;
+    --primary-hover: #1a4032;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.klavitura {
+   margin: 5px;
+   background-color: #30281f;
+}
+.klavitura .box button {
+    padding: 20px 20px;
+    border: 5px solid black;
+    background: #120f00;
+}
+
+.box  button:hover {
+    background-color: aliceblue;
+    color: #000;
+}
+.klavitura .box .tugma:active  {
+    background-color: #e17e02;
+    transform: scale(.99 );
+}
+
+.theme-toggle-button {
+    background-color: #1c232b;
+}
+
+button { 
+    padding: 10px 25px;
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    margin: 1px;
+}  

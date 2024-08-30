@@ -1,0 +1,71 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: monospace, sans-serif;
+    background: #302c42;
+}
+
+.container {
+    max-width: 1270px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 50px 0;
+   
+    // =====LOGO STYLE =====
+ .header_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    // =====LOGO STYLE ========
+
+    // =====NAV  STYLE START=====
+    .nav {
+        ol {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            li {
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 14.6px;
+                }
+            }
+        }
+    }
+    // =====NAV  STYLE END =====
+    // ====BUTTON STYLE BOSHLANISHI ======
+    .button_list {
+
+        button {
+            font-weight: 700;
+            color: rgb(37, 34, 34);
+            padding: 10px 25px;
+            border-radius: 20px;
+            background: transparent;
+            border: none;
+            margin-left: 6px;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+        button:nth-child(2){
+            border: none;
+            background: #473c79;
+        }
+    }
+ }
+    // ====BUTTON STYLE BOSHLANISHI ======
+}

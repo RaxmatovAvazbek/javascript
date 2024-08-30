@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <title>Naushnik</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">electroni<span>x</span></a>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#shop">shop</a>
+        <a href="#takeOrder">take order</a>
+        <a href="#blog">blog</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+        <i class='bx bx-search'></i>
+        <i class='bx bx-sidebar bx-rotate-90' undefined ></i>
+      </nav>
+      <div class="icons">
+        <i class='bx bxs-heart' ></i>
+
+        <a href="#" class="signIn"><i class='bx bxs-user' ></i> sign in</a>
+        <a href="#" class="btn"><i class='bx bxs-cart' ></i>cart <span>/$0.00</span></a>
+      </div>
+    </header>
+
+    <section id="home" class="home">
+        <div class="content">
+            <span>the next generation</span>
+            <h1>best electronics<br>you can afford</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Illo voluptatibus laudantium non adipisci numquam pariatur.</p>
+            <a href="#" class="btn"><i class='bx bxs-cart' ></i> buy now 250$</a>
+        </div>
+        <img src="./image-removebg-preview.png" alt="">
+    </section>
+
+
+    <script>
+        let navbar = document.querySelector('.navbar')
+        let bar = document.querySelector('.bx-sidebar')
+
+        bar.onclick = () => {
+            navbar.classList.toggle('active')
+        }
+    </script>
+  </body>
+</html>

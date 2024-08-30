@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="birinchi">
+            <form> 
+                <div class="box">
+                    <label for="firstname">Ismingizni kiriting</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Ismingizni kiriting...">
+                    <label for="lastname">Familiyangizni kiriting</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Familiyangizni kiriting...">
+                    <label for="phone">Telefon raqam kiriting</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Telefon raqam kiriting...">
+                    <label for="email">Emailingizni kiriting</label>
+                    <input type="email" id="email" name="email" placeholder="Emailingizni kiriting...">
+                    <label for="number">Yoshingizni kiriting</label>
+                    <input type="number" id="number" name="number" min="1" max="100" placeholder="Yoshingizni kiriting...">
+                    <label>Jinsingizni kiriting</label>
+                    <select  id="gender">
+                        <option value="erkak">Erkak</option>
+                        <option value="ayol">Ayol</option>
+                    </select>
+                    <button  type="button" value="button" onclick="tugma()">Ma'lumot joylash uchun bosing</button>
+                 </div> 
+            </form>
+             <table id="jadval">
+                 <tr>
+                   <th>Ism</th>
+                   <th>Familiya</th>
+                   <th>Telefon Raqami</th>
+                   <th>Email</th>
+                   <th>Jinsi</th>
+                   <th>Yoshi</th>
+                 </tr>
+                 <tr>
+                   <td class="text" id="ism"></td>
+                   <td class="text" id="familiya"></td>
+                   <td class="phone" id="phone"></td>
+                   <td class="email" id="email"></td>
+                   <td class="gender" id="gender"></td>
+                   <td class="age" id="age"></td>
+                 </tr>
+               </table>
+        </div>
+        <div class="ikkinchi">  
+              <!-- <form>
+                <div class="box">
+                     <label for="firstNameS">Ismingizni kiriting</label>
+                     <input type="text" id="firstNameS" name="firstNameS" placeholder="Ismingizni kiriting...">
+                     <label for="lastNameS">Familiyangizni kiriting</label>
+                     <input type="text" id="lastNameS" name="lastName" placeholder="Familiyangizni kiriting...">
+                     <label for="phoneNumberS">Telefon raqam kiriting</label>
+                     <input type="tel" id="phoneNumberS" name="phoneNumberS" placeholder="Telefon raqam kiriting...">
+                     <label for="emailS">Emailingizni kiriting</label>
+                     <input type="emailS" id="emailS" name="emailS" placeholder="Emailingizni kiriting...">
+                     <label for="numberS">Yoshingizni kiriting</label>
+                     <input type="numberS" id="numberS" name="numberS" min="1" max="100" placeholder="Yoshingizni kiriting...">
+                     <label>Jinsingizni kiriting</label>
+                     <select  id="genderS">
+                         <option value="erkak">Erkak</option>
+                         <option value="ayol">Ayol</option>
+                     </select>
+                     <button  type="button" value="Submit" onclick="tugma()">Topish uchun bosing</button>
+                </div> 
+             </form> -->
+            <table>
+                <tr>
+                  <th>Ism</th>
+                  <th>Familiya</th>
+                  <th>Telefon Raqami</th>
+                  <th>Email</th>
+                  <th>Jinsi</th>
+                  <th>Yoshi</th>
+                </tr>
+                <tr>
+                  <td class="text" id="ism"></td>
+                  <td class="text" id="familiya"></td>
+                  <td class="phone" id="phone"></td>
+                  <td class="email" id="email"></td>
+                  <td class="gender" id="gender"></td>
+                  <td class="age" id="age"></td>
+                </tr>
+              </table>
+        </div>
+    </div>
+
+    <script defer src="./index.js"></script>
+</body>
+</html>

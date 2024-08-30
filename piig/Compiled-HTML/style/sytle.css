@@ -1,0 +1,57 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace, sans-serif;
+  background: #302c42;
+}
+
+.container {
+  max-width: 1270px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 50px 0;
+}
+.header .header_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header_inner .logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header .header_inner .nav ol {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+.header .header_inner .nav ol li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14.6px;
+}
+.header .header_inner .button_list button {
+  font-weight: 700;
+  color: rgb(37, 34, 34);
+  padding: 10px 25px;
+  border-radius: 20px;
+  background: transparent;
+  border: none;
+  margin-left: 6px;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.header .header_inner .button_list button:nth-child(2) {
+  border: none;
+  background: #473c79;
+}/*# sourceMappingURL=sytle.css.map */

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Klavitura</title>
+</head>
+<body>
+    <tr> 
+        <input type="text" id="display"> 
+    </tr> 
+    <table id="calcu"> 
+        <tr> 
+            <td><input type="button" value="`" onclick="addInfo()" /></td> 
+            <td><input type="button" value="1" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="2" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="3" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="4" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="5" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="6" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="7" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="8" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="9" onclick="pushValue('')"/></td> 
+            <td><input type="button" value="-" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="=" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="Delet" onclick="pushValue()"> </td> 
+            <td><input type="button" value="n" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="/" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="*" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="-" onclick="pushValue('')"> </td>                  
+        </tr> 
+        <tr> 
+            <td><input type="button" value="Tab" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="Q" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="W" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="E" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="R" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="T" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="Y" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="U" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="I" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="O" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="P" onclick="pushValue('')"> </td> 
+            <td><input type="button" width="10px" value="{" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="}" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="|" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="7" onclick="pushValue('')"> </td>
+            <td><input type="button" value="8" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="9" onclick="pushValue('')"> </td>  
+        </tr> 
+        <tr> 
+            <td><input type="button" value="loc" onclick="pushValue('loc')"> </td> 
+            <td><input type="button" value="A" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="S" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="D" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="F" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="G" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="H" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="J" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="K" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="L" onclick="pushValue('')"> </td> 
+            <td><input type="button" value=";" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="'" onclick="pushValue()"> </td> 
+            <td><input type="button" value="shift" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="4" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="5" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="6" onclick="pushValue('')"> </td>
+            <td><input type="button" value="+" onclick="pushValue('')"> </td>   
+        </tr>
+        <tr>
+            <td><input type="button" value="shift" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="*" onclick="pushValue('')"> </td>  
+            <td><input type="button" value="Z" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="X" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="C" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="V" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="B" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="N" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="M" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="," onclick="pushValue('')"> </td> 
+            <td><input type="button" value="." onclick="pushValue('')"> </td> 
+            <td><input type="button" value="/" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="shift" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="1" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="2" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="3" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="ent" onclick="pushValue()"> </td>
+        </tr> 
+        <tr> 
+            <td><input type="button" value="cont" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="fn" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="pk" onclick="pushValue()"> </td> 
+            <td><input type="button" value="alt" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="ppp" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="alt" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="|" onclick="solve('')"> </td> 
+            <td><input type="button" value="<" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="^" onclick="pushValue('')"> </td> 
+            <td><input type="button" value=">" onclick="pushValue('')"> </td> 
+            <td><input type="button" value="0000" onclick="pushValue()">  </td>
+            <td><input type="button" value="." onclick="pushValue()"> </td> 
+            <td><input type="button" value="ent" onclick="pushValue()"> </td> 
+            <td><input type="button" value="." onclick="pushValue()"> </td> 
+        </tr> 
+    </table> 
+    <script src="../lesson-56/index.js"></script>
+</body>
+</html>

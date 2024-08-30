@@ -1,0 +1,225 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    text-decoration: none;
+}
+
+:root {
+    --black: #333;
+    --white: #fff;
+    --light-color: #666;
+    --main-color: #fba834;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    height: 100vh;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    box-shadow: .1rem .5rem 1rem #999;
+    position: fixed;
+    padding: 1rem;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.header .navbar .bx-sidebar {
+    display: none;
+    font-size: 3rem;
+    color: black;
+    margin-right: 1rem;
+    cursor: pointer;
+    background-color: #333;
+}
+
+
+
+.logo {
+    font-size: 2rem;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.logo span {
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+.navbar a, .navbar i{
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--black);
+    text-transform: capitalize;
+    margin: 0 1rem;
+}
+.navbar i {
+    font-size: 1.8rem;
+}
+.navbar a:hover,
+.navbar i:hover {
+    color: var(--main-color);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-template: 1rem;
+}
+.icons i.bxs-heart {
+    color: var(--main-color);
+    /* background-color: var(--black); */
+    box-sizing: .1rem .5rem 1rem #999;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 1.9rem;
+    margin-right: 1rem;
+}
+.icons i.bxs-heart:hover {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.icons .signIn {
+    font-size: 1.8rem;
+    color: black;
+    margin: 1rem 0;
+}
+.icons .signIn i {
+    color: black;
+    margin-right: 0.5rem;
+}
+
+.btn {
+    background-color: var(--main-color);
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    box-shadow: .1rem .5rem 1rem #999;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+.btn span {
+    padding: 0 .5rem;
+}
+.btn:hover {
+    background-color: var(--black);
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10rem;
+    background-size: cover;
+    padding: 0 5rem;
+    background-position: center;
+}
+
+
+
+
+
+.home .content span {
+    color: var(--black);
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+.home .content h1 {
+    color: black;
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem 0;
+}
+.home .content p {
+    color: var(--light-color);
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    line-height: 1.5;
+    text-transform: lowercase;
+    margin-bottom: 3rem;
+}
+
+.home .content .btn {
+    background-color: var(--main-color);
+    padding: 1rem 2rem ;
+    border-radius: 3rem;
+    box-shadow: .1rem  .4rem 1rem #999;
+    font-size: 1.4rem;
+    margin: 2rem 0;
+    color: var(--white);
+}
+
+.home .content .btn:hover {
+    border-radius: 0;
+    background-color: var(--black);
+
+}
+
+
+@media (max-width:990px) {
+    html {
+        font-size: 55.5%;
+    }
+}
+
+@media (max-width:768px) {
+    .header .navbar {
+        display: none;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        right: 0;
+    }
+    .header .navbar .bx-sidebar {
+        display: block;
+    }
+    .header .navbar.active {
+        display: block;
+    }
+}
+
+@media (max-width:400px) {
+    html {
+        font-size: 50%;
+    }
+    .home {
+        padding-top: 10rem;
+        padding: 0;
+    }
+    .home .content span {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .home .content h1 {
+        font-size: 4rem;
+            margin-bottom: 1rem;
+    }
+}
+
+
+
+

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+#toggleBtn {
+    background-color: #15ea38;
+}
+
+
+
+button {
+    padding: 12px 20px;
+    background-color: blue;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin: 1rem;
+}
+
+.container {
+    border: .5rem solid black;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 2rem;
+}
+.container .box1 {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    user-select: none;
+    gap: .5rem;
+}
+.container .box1 .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+.container .box1 .box {
+    /* width: 50%; */
+    width: 100px;
+    height: 100px;
+    background-color: #15ea38;
+ }
+
+.container .box1 .box:nth-child(1) {
+    background-color: red;
+}
+.container .box1 .box:nth-child(2) {
+    background-color: #15ea38;
+
+}
+.container .box1 .box:nth-child(3) {
+    background-color: blue;
+}
+.container .box1 .box:nth-child(4) {
+    background-color: yellow;
+}
+.container .box1 .box:nth-child(5) {
+    background-color: purple;
+}
+.container .box1 .box:nth-child(6) {
+    background-color: gray;
+}
+.container .box1 .box:nth-child(7) {
+    background-color: black;
+    color: #fff;
+}
+
+
+.container  p {
+    width: 50%;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+}

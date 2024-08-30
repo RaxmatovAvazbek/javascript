@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Klavitura</title>
+</head>
+<body> 
+    
+    <div class="container">
+        <button class="theme-toggle-button" type="button">Toggle theme</button>
+        
+    <div class="klavitura">
+            <div class="yozuv">
+                <textarea></textarea>
+            </div>
+        <div class="box">
+            <button class="tugma">1</button>
+            <button class="tugma">2</button>
+            <button class="tugma">3</button>
+            <button class="tugma">4</button>
+            <button class="tugma">5</button>
+            <button class="tugma">6</button>
+            <button class="tugma">7</button>
+            <button class="tugma">8</button>
+            <button class="tugma">9</button>
+            <button class="tugma">0</button>
+            <button class="tugma">-</button>
+            <button class="tugma">=</button>
+        </div>
+        <div class="box">
+            <button class="tab">Tab</button>
+            <button class="tugma">q</button>
+            <button class="tugma">w</button>
+            <button class="tugma">e</button>
+            <button class="tugma">r</button>
+            <button class="tugma">t</button>
+            <button class="tugma">y</button>
+            <button class="tugma">u</button>
+            <button class="tugma">i</button>
+            <button class="tugma">o</button>
+            <button class="tugma">p</button>
+            <button class="tugma">[</button>
+            <button class="tugma">]</button>
+            <button class="delet"> Delete</button>
+        </div>
+        <div class="box">
+            <button class="shift">shift</button>
+            <button class="tugma">a</button>
+            <button class="tugma">s</button>
+            <button class="tugma">d</button>
+            <button class="tugma">f</button>
+            <button class="tugma">f</button>
+            <button class="tugma">g</button>
+            <button class="tugma">h</button>
+            <button class="tugma">j</button>
+            <button class="tugma">k</button>
+            <button class="tugma">l</button>
+            <button class="tugma">;</button>
+            <button class="tugma">'</button>
+            <button class="tugma">enter</button>
+        </div>
+        <div class="box">
+            <button class="shift">shift</button>
+            <button class="tugma">z</button>
+            <button class="tugma">x</button>
+            <button class="tugma">c</button>
+            <button class="tugma">v</button>
+            <button class="tugma">b</button>
+            <button class="tugma">n</button>
+            <button class="tugma">m</button>
+            <button class="tugma">,</button>
+            <button class="tugma">.</button>
+            <button class="tugma">/</button>
+            <button class="shift">shift</button>
+        </div>
+    </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
+<!-- <table id="Klavitura"> 
+    
+    <input type="button" value="`" click="addInfo()"/> 
+        <input type="button" value="1" click="input()">  
+        <input type="button" value="2" click="input()">  
+        <input type="button" value="3" click="input()">  
+        <input type="button" value="4" click="input()">  
+        <input type="button" value="5" click="input()">  
+        <input type="button" value="6" click="input()">  
+        <input type="button" value="7" click="input()">  
+        <input type="button" value="8" click="input()">  
+        <input type="button" value="9" click="input()"/> 
+        <input type="button" value="-" click="input()">  
+        <input type="button" value="=" click="input()">  
+        <input type="button" value="Delet" click="input()">  
+        <input type="button" value="n" click="input()">  
+        <input type="button" value="/" click="input()">  
+        <input type="button" value="*" click="input()">  
+        <input type="button" value="-" click="input()">                   
+    </tr> 
+
+        <input type="button" value="Tab" click="input()">  
+        <input type="button" value="Q" click="input()">  
+        <input type="button" value="W" click="input()">  
+        <input type="button" value="E" click="input()">  
+        <input type="button" value="R" click="input()">  
+        <input type="button" value="T" click="input()">  
+        <input type="button" value="Y" click="input()">  
+        <input type="button" value="U" click="input()">  
+        <input type="button" value="I" click="input()">  
+        <input type="button" value="O" click="input()">  
+        <input type="button" value="P" click="input()">  
+        <input type="button" width="10px" value="{" click="input()">  
+        <input type="button" value="}" click="input()">  
+        <input type="button" value="|" click="input()">  
+        <input type="button" value="7" click="input()"> 
+        <input type="button" value="8" click="input()">  
+        <input type="button" value="9" click="input()">   
+    </tr> 
+
+        <input type="button" value="loc" click="input('loc')">  
+        <input type="button" value="A" click="input()">  
+        <input type="button" value="S" click="input()">  
+        <input type="button" value="D" click="input()">  
+        <input type="button" value="F" click="input()">  
+        <input type="button" value="G" click="input()">  
+        <input type="button" value="H" click="input()">  
+        <input type="button" value="J" click="input()">  
+        <input type="button" value="K" click="input()">  
+        <input type="button" value="L" click="input()">  
+        <input type="button" value=";" click="input()">  
+        <input type="button" value="'" click="input()">  
+        <input type="button" value="shift" click="input()">  
+        <input type="button" value="4" click="input()">  
+        <input type="button" value="5" click="input()">  
+        <input type="button" value="6" click="input()"> 
+        <input type="button" value="+" click="input()">    
+    </tr>
+
+        <input type="button" value="shift" click="input()">  
+        <input type="button" value="*" click="input()">   
+        <input type="button" value="Z" click="input()">  
+        <input type="button" value="X" click="input()">  
+        <input type="button" value="C" click="input()">  
+        <input type="button" value="V" click="input()">  
+        <input type="button" value="B" click="input()">  
+        <input type="button" value="N" click="input()">  
+        <input type="button" value="M" click="input()">  
+        <input type="button" value="," click="input()">  
+        <input type="button" value="." click="input()">  
+        <input type="button" value="/" click="input()">  
+        <input type="button" value="shift" click="input()">  
+        <input type="button" value="1" click="input()">  
+        <input type="button" value="2" click="input()">  
+        <input type="button" value="3" click="input()">  
+        <input type="button" value="ent" click="input()"> 
+    </tr> 
+
+        <input type="button" value="cont" click="input()">  
+        <input type="button" value="fn" click="input()">  
+        <input type="button" value="pk" click="input()">  
+        <input type="button" value="alt" click="input()">  
+        <input type="button" value="ppp" click="input()">  
+        <input type="button" value="alt" click="input()">  
+        <input type="button" value="|" click="solve()">  
+        <input type="button" value="<" click="input()">  
+        <input type="button" value="^" click="input()">  
+        <input type="button" value=">" click="input()">  
+        <input type="button" value="0000" click="input()">  
+        <input type="button" value="." click="input()">  
+        <input type="button" value="ent" click="input()">  
+        <input type="button" value="." click="input()">   -->
+    <!-- </tr> 
+</table>  -->

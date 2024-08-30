@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>search</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <input id="firstName" placeholder="FirstName">
+            <input id="lastName" placeholder="lastName">
+            <input id="age" placeholder="Age">
+            <input id="email" placeholder="email">
+            <input id="phoneNumber" placeholder="PhoneNumber">
+            <label for="male">Male</label>
+            <input id="male" type="radio" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+
+            <button onclick="addUser()">YUKLASH</button>
+           <div class="text" id="add-text">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>Age</th>
+                        <th>Email</th>
+                        <th>Number</th>
+                        <th>gender</th>
+                    </tr>
+                </thead>
+                <tbody id="add-tbody">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+           </div>
+        </div>
+        <div class="box">
+            <input id="firstNameS" placeholder="FirstName">
+            <input id="lastNameS" placeholder="lastName">
+            <input id="ageS" placeholder="Age">
+            <input id="emailS" placeholder="email">
+            <input id="phoneNumberS" placeholder="PhoneNumber">
+            <label for="maleS">Male</label>
+            <input id="maleS" type="radio" name="genderS">
+            <label for="femaleS">Female</label>
+            <input type="radio" name="genderS" id="femaleS">
+            <button onclick="search()">🔍 Search</button>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>Age</th>
+                        <th>Email</th>
+                        <th>Number</th>
+                        <th>gender</th>
+                    </tr>
+                </thead>
+                <tbody id="search-tbody">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script defer src="./index.js"></script>
+</body>
+</html>
